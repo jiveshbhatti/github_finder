@@ -4,15 +4,19 @@ import Footer from "./components/layout/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import About from "./pages/About.jsx";
+import { GithubProvider } from "./context/github/GithubContext.js";
 
 function App() {
   return (
+    <GithubProvider>
     <Router >
    <div className='flex flex-col justify-between h-screen'>
    <Navbar/>
 
 
     <main className="conatiner mx-auto px-3 pb-12">
+
+
     <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/about' element={<About/>}/>
@@ -29,6 +33,7 @@ function App() {
     </div>
  
     </Router>
+    </GithubProvider>
   )
 }
 
