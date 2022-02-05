@@ -8,10 +8,10 @@ import GithubContext from "../../context/github/GithubContext";
 export default function UserResults() {
 
     const {users,isLoading,fetchUsers}= useContext(GithubContext)
-console.log(users,'from user resultrs')
-  useEffect(() => {
-    fetchUsers();
-  }, []);
+// console.log(users,'from user resultrs')
+//   useEffect(() => {
+//     fetchUsers();
+//   }, []);
 
  
   if (!isLoading) {
