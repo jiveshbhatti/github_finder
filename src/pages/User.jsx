@@ -5,7 +5,7 @@ import GithubContext from '../context/github/GithubContext'
 import { useParams } from 'react-router-dom';
 import Spinner from '../components/layout/Spinner';
 import { Link } from 'react-router-dom';
-
+import RepoList from '../components/repos/RepoList';
 export default function User() {
 
     const {getUser, user, isLoading, repos, dispatch } = useContext(GithubContext)
@@ -166,7 +166,8 @@ export default function User() {
         </div>
       </div>
 
-      <RepoList repos={repos} />
+    //!To Do Add repos below      
+      {/* <RepoList repos={repos} /> */}
     </div>
   </>
 )
