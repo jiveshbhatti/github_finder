@@ -1,6 +1,6 @@
 # App to Find all users of Github.
 
-CI=false npm run build
+https://github-finder-kappa-one.vercel.app/
 
 ## Tech:
 
